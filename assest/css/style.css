@@ -1,0 +1,252 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{text-decoration:none;}
+.text-justify{
+    text-align:justify;
+}
+header .tophead{
+    height:28px;
+    background:#34313a;
+}
+header .tophead ul li{
+    margin:0px 20px;
+}
+header .tophead ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 400;
+}
+
+header .tophead  .leftgroup ul li a:hover{
+    text-decoration: underline;
+}
+header .tophead  .leftgroup ul li a.active{
+   width:auto;
+   height:auto;
+   color:#b00000;
+   font-weight:700;
+   line-height :28px;
+   text-align: center;
+   position: relative;
+   background:#fff;
+   display: inline-block;
+
+}
+header .tophead  .leftgroup ul li a.active:hover{
+    text-decoration:none;
+
+}
+.mega-menu{
+    display: none;
+    background-color: gray;
+}
+.nav-item:hover .mega-menu{
+    display: block;
+    position: absolute;
+    left:0;
+    right:0;
+}
+header .tophead  .leftgroup ul li a.active::before{
+    content:"";
+    top:0px;
+    width:0px;
+    height:0px;
+    right:100%;
+    position:absolute;
+    border-right:15px solid #fff;
+    border-bottom:0px solid #fff;
+    border-top:28px solid transparent;
+}
+header .tophead  .leftgroup ul li a.active::after{
+    content:"";
+    top:0px;
+    width:0px;
+    height:0px;
+    left:100%;
+    position:absolute;
+    border-right:15px solid transparent;
+    border-bottom:0px solid transparent;
+    border-top:28px solid #fff;
+}
+header .tophead  .rightgroup ul li{
+    margin:0px 13px;
+}
+header .tophead  .leftgroup ul li{
+    margin:0px 20px;
+}
+header .tophead  .rightgroup ul li select{
+    border:none;
+    color:#fff;
+    font-size:13px;
+    background:#34313a;
+}
+#navbarSupportedContent button form{
+color:#fff;
+}
+/*slider section start*/
+.carousel-inner .carousel-item img{
+    height:400px;
+}
+@keyframes zoomin{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+.carousel-inner .carousel-item img{
+    animation:zoomin 10s infinite;
+}
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width:5px;
+    height:10px;
+    border-radius: 50%;
+}
+.interval{
+    z-index: 9;
+    min-height: 200px;
+    margin-top: -50px;
+    background: #fff;
+}
+.interval p{
+color:rgb(47, 45, 45);
+font-size: 17 px;
+}
+/*slider section end*/ 
+/*indivisual corparation section start*/ 
+.imgbox{
+    overflow:hidden;
+}
+.imgbox img:hover{
+    transition: 1s all;
+    transform: scale(1.1);
+}
+/*indivisual corparation section end*/   
+/*DOMESTIC SECTION START*/
+.domestic img:hover{
+    transform: scale(1.1);
+}
+.domestic p a{
+    color:gray;
+}
+.domestic p{
+    font-weight: 200;
+}
+/*DOMESTIC SECTION end*/
+/*world section start*/
+.world .container .button a{
+    color: #fff;
+    background-color: #b00000;
+    
+}
+/*world section end*/
+/*world wide network section start*/
+.network .container img{
+    max-width:100%;
+    height: 500px;
+}
+.network .container .button a{
+    border: 2px solid red;
+}
+/*world wide network section end*/
+/*footersection start*/
+.footer{
+    background:#292b2c;
+}
+.footer .container ul li a{
+    color:rgb(92, 101, 104);
+    font: weight 900px;
+}
+
+footer  .latter  li a:hover{
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+.Service ul li a:hover{
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+.networks ul li a:hover{
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+.Recent ul li a:hover{
+    color: lightgoldenrodyellow;
+    text-decoration: underline;
+}
+    
+/*footersection end*/
+
+
+/* branch html page start */
+/* AFRICA section start */
+.Africa ul li a{
+    color:#292b2c;
+    font-size: 16px;
+}
+/* AFRICA section end */
+/*  asia section end  */
+.asia ul li a{
+    color:#292b2c;
+    font-size: 16px;
+}
+/*  asia section end  */
+/* branch html page start */
+
+
+/* news html page start */
+.news-para{
+    font-size: medium;
+    font-weight: 400;
+}
+/* news html page end */
+/* img box section start..... */
+ .boxsection{
+    box-shadow: 1px 1px 8px 1px rgba(51, 51, 51, 0.25);;
+ }
+ .card-text{
+    font-size: 13px;
+ }
+ .card-heading a{
+    color: #b00000;
+ }
+ .card-heading a:hover{
+    color: #010d17;
+ }
+ .loadmore{
+    border:1px solid red;
+    padding: 10px;
+    color:#b00000;
+    width:150px;
+    
+ }
+ .loadmore:hover{
+    background-color: #b00000;
+    color:white;
+ }
+/* img box section end..... */
+
+
+
+
+
+
+/*media query section start*/
+@media only screen and (max-width:1023px){
+    header .tophead{
+        display:none;
+    }
+}
+.container button{
+    border:2px solid red;
+}
+.container button:hover{
+    background-color: red;
+    color:white;
+}
+
+/*media query section end*/
